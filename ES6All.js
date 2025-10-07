@@ -80,3 +80,22 @@ Object.seal(employee);
 employee.name = 'Jane'; 
 employee.country = 'USA'; 
 console.log(employee);
+//object looping 
+for (const key in employee) {
+  console.log(key)
+  console.log(employee[key])
+}
+
+//map
+const numbers1 = [1, 2, 3, 4, 5];
+const squared = numbers1.map(num => num * num);
+console.log(squared);
+//filter
+const evenNumbers = numbers1.filter(num => num % 2 === 0);
+console.log(evenNumbers);
+//reduce
+const sum = numbers1.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
+//find
+const found = numbers1.find(num => num > 3);
+console.log(found);
