@@ -71,3 +71,12 @@ console.log(employee);
 //update
 employee.city = 'Los Angeles';
 console.log(employee);
+//friz
+Object.freeze(employee);
+employee.role = 'Manager'; 
+console.log(employee);
+//seal
+Object.seal(employee);
+employee.name = 'Jane'; 
+employee.country = 'USA'; 
+console.log(employee);
